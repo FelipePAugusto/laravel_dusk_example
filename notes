@@ -1,0 +1,22 @@
+composer create-project laravel/laravel laravel_project
+
+npm install
+npm run dev
+
+composer require laravel/ui
+
+npm install
+npm run dev
+
+php artisan ui bootstrap
+php artisan ui vue
+php artisan ui react
+
+php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
+
+npm install
+npm run dev
+
+php artisan migrate
