@@ -16,8 +16,14 @@ class LoginTest extends DuskTestCase
     public function testExample()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
+            $browser->visit('/laravel_dusk_example/public/')
+                    ->clickLink('Log in')
+                    ->type('email', 'felipe@gmail.com')
+                    ->type('password', '12345678')
+                    ->click('button[type="submit"]')
+                    ->assertSee('You are logged in')
                     ->assertSee('Laravel');
+            $browser->pause(1000);
         });
     }
 }
