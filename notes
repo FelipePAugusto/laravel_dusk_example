@@ -20,3 +20,13 @@ npm install
 npm run dev
 
 php artisan migrate
+
+sudo chmod 777 /Applications/XAMPP/htdocs/laravel_dusk_example/*
+
+
+sudo chmod -R ugo+rw storage
+
+
+composer require --dev laravel/dusk
+
+php artisan dusk:install
